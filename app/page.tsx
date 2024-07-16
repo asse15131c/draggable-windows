@@ -7,10 +7,10 @@ export default function Home() {
     <>
       <Header />
       <main
-        className="w-full h-[calc(100vh-90px)] mt-[90px] px-4 pb-4 grid grid-cols-2 grid-rows-2 gap-4"
+        className="w-full h-[calc(100vh-90px)] mt-[90px] px-4 pb-4 grid grid-cols-2 grid-rows-2 gap-4 overflow-hidden"
         id="draggableContainer"
       >
-        <Card title="TOOGLE WINDOW">
+        <Card title="TOOGLE WINDOW 1 ">
           <div className="text-5xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -28,7 +28,7 @@ export default function Home() {
             pariatur
           </div>
         </Card>
-        <Card title="TOOGLE WINDOW" className="row-span-2">
+        <Card title="TOOGLE WINDOW 2">
           <div className="text-5xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -46,7 +46,7 @@ export default function Home() {
             pariatur
           </div>
         </Card>
-        <Card title="TOOGLE WINDOW">
+        <Card title="TOOGLE WINDOW 3">
           <div className="text-5xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

@@ -28,18 +28,15 @@ export function Card({
       Draggable.create(cardRef.current, {
         bounds: document.getElementById("draggableContainer"),
         inertia: true,
-        onClick: function () {
-          console.log("clicked");
-        },
-        onDragEnd: function () {
-          console.log("drag ended");
-        },
       });
 
       const animate = () => {
+        tl.clear();
         tl.to(cardRef.current, {
           x: 0,
           y: 0,
+          ease: "expo.out",
+          duration: 0.6,
         });
       };
 
@@ -62,7 +59,7 @@ export function Card({
   });
 
   return (
-    <div className={clsx(className)}>
+    <div className={clsx(className, "gsap:cards")}>
       <div
         className={clsx(
           "flex flex-col w-full p-2 bg-slate-700 text-black flex-none h-auto max-h-full"

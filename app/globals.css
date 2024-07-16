@@ -7,8 +7,6 @@ main {
   scrollbar-width: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+main > *:nth-child(2) {
+  @apply row-span-2;
 }
